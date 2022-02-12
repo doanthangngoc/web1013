@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai2.css">
+</head>
+<body>
+    <div class="menu">
+        <form>
+            <div class="form-group">
+                <label for="name">Họ và Tên </label>
+                <input class="form-control" tabindex="1" />
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Giới tính:</legend>
+                    <label><input type="radio">Nam</label>
+                    <label><input type="radio">Nữ</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label>Ngày sinh: </label>
+                <input type="date" class="form-control" tabindex="2" />
+            </div>
+            <div class="form-group">
+                <label for="note">Điểm</label>
+                <input type="number" min="0" max="10" step="0.25" class="form-control" tabindex="3" />
+            </div>
+            <div class="form-group">
+                <label for="name">Nghề nghiệp</label>
+                <input list="danh-sach" class="form-control" tabindex="6" />
+                <datalist id="danh-sach">
+                    <option value="IT"></option> 
+                    <option value="Sinh viên"></option>
+                    <option value="Giáo Viên"></option>
+                    <option value="Công an"></option>
+                    <option value="Thiết kế đồ họa"></option>  
+                </datalist>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Sở thích:</legend> 
+                    <label><input type="radio">Thể thao</label>
+                    <label><input type="radio">Du lịch</label>
+                    <label><input type="radio">Âm nhạc</label>
+                    <label><input type="radio">Ẩm thực</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="note">Ghi chú:</label>
+                <input class="form-control" tabindex="4">
+            </div>
+            <div class="form-group">
+                <button class="form-button" tabindex="5">Đăng ký</button>
+                <button class="form-button" tabindex="6">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
